@@ -6,7 +6,7 @@ export default function Search({filter}) {
     return (
         <div className='search'>
             <SearchIcon className='search__image'/>
-            <input type={'text'} className='search__input' onChange={(e) => filter(e.target.value)}/>
+            <input type={'text'} className='search__input' placeholder="Search by exercise name" onChange={(e) => filter(e.target.value)}/>
       </div>
   )
 }
