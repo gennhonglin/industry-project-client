@@ -1,0 +1,15 @@
+.exercise__image__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 41rem;
+    background: url("../../assets/images/Capture.JPG");
+    background-size: cover;
+    background-position: 50%;
+
+    &-button {
+        margin-top: -18.75rem;
+        border: none;
+        background-color: transparent;
+    }
+}
