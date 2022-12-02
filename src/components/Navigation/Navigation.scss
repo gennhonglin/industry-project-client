@@ -1,4 +1,7 @@
 .navigation {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
     background-color: #848484;
     display: flex;
     justify-content: space-evenly;
