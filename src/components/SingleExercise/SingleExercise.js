@@ -1,10 +1,20 @@
 import "./SingleExercise.scss";
-import play from "../../assets/icons/Play.png";
+import playImage from "../../assets/icons/Play.png";
 
-function SingleExercise() {
+function SingleExercise({play, handleClick}) {
+    if(play === "play") {
+
+        return (
+            <div className="exercise__image__loading">
+                <div className="exercise__image__loading-container">
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="exercise__image__container">
-            <button className="exercise__image__container-button"><img src={play}/></button>
+            <button onClick={handleClick} className="exercise__image__container-button"><img alt="play-icon" src={playImage}/></button>
         </div>
     )
 }

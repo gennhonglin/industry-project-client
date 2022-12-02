@@ -6,6 +6,7 @@
     background-color: $purple;
     display: flex;
     align-items: center;
+    position: relative;
 
     &__text {
         position: relative;
@@ -16,5 +17,11 @@
 
     &__arrow {
         color: $black;
+    }
+
+    &__container__profile-icon {
+        position: absolute;
+        right: 1rem;
+        top: -2rem;
     }
 }

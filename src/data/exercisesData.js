@@ -1,9 +1,9 @@
-import arms from '../assets/images/Vector.png'
-import chest from '../assets/images/Vector-1.png'
-import back from '../assets/images/Vector-2.png'
-import abs from '../assets/images/Vector-3.png'
-import shoulders from '../assets/images/Vector-4.png'
-import arms1 from '../assets/images/Vector-5.png'
+import arms from '../assets/Images/Vector.png'
+import chest from '../assets/Images/Vector-1.png'
+import back from '../assets/Images/Vector-2.png'
+import abs from '../assets/Images/Vector-3.png'
+import shoulders from '../assets/Images/Vector-4.png'
+import arms1 from '../assets/Images/Vector-5.png'
 
 const exercises = [
         {
