@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
-import PersonIcon from '@mui/icons-material/Person';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import HomeIcon from '@mui/icons-material/Home';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import home from "../../assets/icons/Inactive Home.png";
+import workout from "../../assets/icons/Inactive Workouts.png";
+import profile from "../../assets/icons/inactive profile.png";
+import messages from "../../assets/icons/inactive messages.png";
+import activehome from "../../assets/icons/Active Home.png";
+
 
 import '../Navigation/Navigation.scss'
 
@@ -11,19 +13,19 @@ function Navigation() {
         <header>
             <nav className="navigation">
                 <NavLink className="navigation__link" to='/'>
-                    <HomeIcon className="navigation__link--home"/>
+                    <img src={activehome} className="navigation__link--home" />
                 </NavLink>
 
                 <NavLink className="navigation__link" to='/workout'>
-                    <FitnessCenterIcon className="navigation__link--fitness"/>
+                    <img src={workout} className="navigation__link--home" />
                 </NavLink>
 
                 <NavLink className="navigation__link" to='/profile'>
-                    <PersonIcon className="navigation__link--person"/>
+                    <img src={profile} className="navigation__link--home" />
                 </NavLink>
 
                 <NavLink className="navigation__link" to='/chat'>
-                    <QuestionAnswerIcon className="navigation__link--chat"/>
+                    <img src={messages} className="navigation__link--home" />
                 </NavLink>
 
             </nav>
