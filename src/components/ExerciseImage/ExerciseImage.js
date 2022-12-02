@@ -1,10 +1,8 @@
 import React from 'react'
 import './ExerciseImage.scss'
 
-export default function ExerciseImage() {
+export default function ExerciseImage({src, alt }) {
   return (
-    <div className='exercise-image'>
-        
-    </div>
+    <img className='exercise-image' src={src} alt={alt} />
   )
 }

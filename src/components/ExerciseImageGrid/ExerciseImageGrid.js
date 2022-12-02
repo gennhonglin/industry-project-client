@@ -2,15 +2,13 @@ import React from 'react'
 import ExerciseImage from '../ExerciseImage/ExerciseImage'
 import './ExerciseImageGrid.scss'
 
-export default function ExerciseImageGrid() {
+export default function ExerciseImageGrid({data}) {
+    
   return (
     <div className='grid'>
-      <ExerciseImage />
-      <ExerciseImage />
-      <ExerciseImage />
-      <ExerciseImage />
-      <ExerciseImage />
-      <ExerciseImage />
+          {data.map(exercise => {
+             return <ExerciseImage key={exercise.id} src={exercise.image} alt={exercise.name} />
+     })}
     </div>
   )
 }

@@ -3,6 +3,8 @@ import HomePage from "./components/HomePage/HomePage";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import WorkoutPage from './pages/WorkoutPage/WorkoutPage';
 import ExercisePage from "./pages/ExercisePage/ExercisePage";
+import './App.scss'
+
 
 function App() {
   return (
