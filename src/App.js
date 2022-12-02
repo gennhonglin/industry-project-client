@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />}></Route>
           <Route path='/workout' element={<WorkoutPage />}></Route>
-          <Route path='/bicep' element={<ExercisePage/>}> </Route>
+          <Route path='/workout/bicep' element={<ExercisePage/>}> </Route>
         </Routes>
         <Navigation/>
       </BrowserRouter>

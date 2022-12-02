@@ -2,6 +2,7 @@ import "./HomePage.scss";
 import settings from "../../assets/icons/settings_White.png";
 import data from '../../workouts.json';
 import arrow from '../../assets/icons/Arrow_Charcoal.png';
+import { Link } from "react-router-dom";
 
 function HomePage() {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -67,7 +68,7 @@ function HomePage() {
             </div>
 
             <div className="exercise__button__container">
-                <button className="exercise__button__container-button">+ Exercise</button>
+                <Link to={`/workout`} className="exercise__button__container-button">+ Exercise</Link>
             </div>
 
             <div className="exercise__list">

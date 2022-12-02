@@ -143,6 +143,10 @@
     justify-content: center;
     transform: translateY(1.25rem);
     &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
         padding: .5625rem 1.5rem;
         color: #FFFFFF;
         width: 152px;
