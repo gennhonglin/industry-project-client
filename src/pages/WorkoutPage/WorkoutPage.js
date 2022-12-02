@@ -9,7 +9,8 @@ import allData from '../../data/exercisesData'
 
 export default function WorkoutPage() {
   const [filteredExercises, setFilteredExercises] = useState(allData)
-  const [searchParams, setSearchParams] = useState({ arms: false, back: false, chest: false, abs: false, shoulders: false})
+  const [searchParams, setSearchParams] = useState({ arms: false, back: false, chest: false, abs: false, shoulders: false })
+  const [searchExercise, setSearchExercise] = useState('')
 
   useEffect(() => {
     setFilteredExercises(() => {
@@ -18,13 +19,17 @@ export default function WorkoutPage() {
         for (const [key, value] of Object.entries(searchParams)) {
           if(key === exercise.category && value) return exercise
         }
+      }).filter((exercise) => {
+        if (!searchExercise) return exercise
+        if(exercise.name.toLowerCase().includes(searchExercise.toLowerCase())) return exercise
       })
     })
-  }, [searchParams])
+  }, [searchParams, searchExercise])
+
   return (
     <div className='workout-page'>
       <WorkoutHeader text={'explore exercises'} />
-      <Search />
+      <Search filter={setSearchExercise} />
       <ExerciseList filter={setSearchParams} searchParams={searchParams} />
       <Title text='recommended for you' />
       <ExerciseImageGrid data={filteredExercises} />
