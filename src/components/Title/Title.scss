@@ -1,0 +1,8 @@
+@use '../../styles/partials/colors' as *;
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+    color: $black;
+    font-size: 1.2rem;
+}
