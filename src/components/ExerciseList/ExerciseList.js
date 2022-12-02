@@ -6,9 +6,8 @@ export default function ExerciseList({ filter, searchParams }) {
   const [filters, setFilters] = useState(searchParams)
   
   return (
-    <div className='exercise-list'>
+    <div className='exercise-list9'>
       <Exercise text={'Arms'} onClick={() => handleArmsFilter()} selected={filters.arms} />
-        <Exercise text={'Back'}  onClick={() => handleBackFilter()} selected={filters.back}/>
         <Exercise text={'Chest'}  onClick={() => handleChestFilter()} selected={filters.chest}/>
         <Exercise text={'Abs'}  onClick={() => handleAbsFilter()} selected={filters.abs}/>
         <Exercise text={'Shoulders'}  onClick={() => handleShouldersFilter()} selected={filters.shoulders}/>

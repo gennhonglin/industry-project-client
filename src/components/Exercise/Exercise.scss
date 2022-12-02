@@ -1,16 +1,18 @@
 @use '../../styles/partials/colors' as *;
 
-.exercise {
+.exercise9 {
+    position: static;
     color: $black;
     background-color: $lightPurple;
     border-radius: 50rem;
     border: none;
     display: inline;
     min-width: 4.5rem;
-    padding: 0 0.5rem;
+    padding: 0.0rem 0.5rem;
     text-align: center;
+    height: fit-content;
 
     &__selected {
-        background-color: $orange;
+        background-color: orange;
     }
 }

@@ -1,9 +1,10 @@
-.exercise-list {
+.exercise-list9 {
     overflow-x: scroll;
     display: flex;
     padding-left: 5%;
     column-gap: 0.5rem;
     width: 90%;
+    height: 4rem;
 
     &::-webkit-scrollbar {
         display: none;

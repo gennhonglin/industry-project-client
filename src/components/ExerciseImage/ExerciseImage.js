@@ -3,6 +3,9 @@ import './ExerciseImage.scss'
 
 export default function ExerciseImage({src, alt }) {
   return (
-    <img className='exercise-image' src={src} alt={alt} />
+    <div className='div'>
+      <p>{ alt}</p>
+      <img className='exercise-image' src={src} alt={alt} />
+    </div>
   )
 }
