@@ -9,4 +9,8 @@
     min-width: 4.5rem;
     padding: 0 0.5rem;
     text-align: center;
+
+    &__selected {
+        background-color: $orange;
+    }
 }

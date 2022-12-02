@@ -10,7 +10,7 @@
     &__input {
         width: 90%;
         border-radius: 50rem;
-        background-color: $lightGray;
+        background-color: $white;
         outline: none;
         text-indent: 1.5rem;
         border: none;
@@ -21,6 +21,6 @@
         position: absolute;
         left: 1.3rem;
         font-size: 1.2rem !important;
-        color: $white;
+        color: $black;
     }
 }
