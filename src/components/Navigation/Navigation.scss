@@ -1,16 +1,33 @@
+@use '../../styles/partials/colors' as *;
+
 .navigation {
-    background-color: #848484;
+    background-color: $darkGray;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 3rem;
     margin: 0;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 
     &__link {
         &__icons {
             height: 1.5625rem;
             width: 1.5625rem;
         }
+
+        &--fitness {
+            transform: translate();
+            transform: rotate(-45deg);
+        }
     }
+}
+
+.active {
+    color: #fff;
+}
+
+a {
+    color: $black;
 }
