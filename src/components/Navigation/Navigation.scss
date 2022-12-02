@@ -1,6 +1,9 @@
 @use '../../styles/partials/colors' as *;
 
 .navigation {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
     background-color: $darkPurple;
     display: flex;
     justify-content: space-evenly;
