@@ -1,0 +1,11 @@
+.exercise-list {
+    overflow-x: scroll;
+    display: flex;
+    padding-left: 5%;
+    column-gap: 0.5rem;
+    width: 90%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

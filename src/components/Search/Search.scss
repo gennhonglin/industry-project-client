@@ -1,0 +1,26 @@
+@use '../../styles/partials/colors' as *;
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
+    &__input {
+        width: 90%;
+        border-radius: 50rem;
+        background-color: $lightGray;
+        outline: none;
+        text-indent: 1.5rem;
+        border: none;
+        padding: 0.2rem 0;
+    }
+
+    &__image {
+        position: absolute;
+        left: 1.3rem;
+        font-size: 1.2rem !important;
+        color: $white;
+    }
+}

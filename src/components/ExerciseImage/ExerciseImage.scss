@@ -1,0 +1,9 @@
+@use '../../styles/partials/colors' as *;
+
+.exercise-image {
+    box-sizing: border-box;
+    background-color: $lightGray;
+    border-radius: 1rem;
+    width: 40%;
+    height: 27%;
+}
